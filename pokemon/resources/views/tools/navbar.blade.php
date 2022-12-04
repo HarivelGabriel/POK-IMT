@@ -28,7 +28,7 @@
             </div>
             <div class="navbtn">
                 <img class="navbar-icon" src="{{URL::asset('/images/navbar/info-64.png')}}">
-                <a href="/menu">INFO</a>
+                <a href="/menu/info">INFO</a>
             </div>
         </div>
     </div>

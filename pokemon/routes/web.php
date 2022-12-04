@@ -21,12 +21,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/menu', function () {
-        return view('menus.info', [
-            'user' => auth()->user()
-        ]);
-    }
-    )->name('menu-info');
+    Route::get('/menu/info', "App\Http\controllers\MenuInfo")->name('menu-info');
 });
 
 Route::middleware([

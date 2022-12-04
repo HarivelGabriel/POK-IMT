@@ -1,0 +1,44 @@
+#main-container{
+    display: flex;
+    justify-content: left;
+}
+
+#energy-container{
+    background-color: white;
+
+    margin-top: 100px;
+    margin-left: 25px;
+
+    height: 400px;
+    width: 182px;
+}
+
+#avatar-container{
+    background-color: white;
+
+    margin-top: 75px;
+    margin-left: 25px;
+
+    height: 575px;
+    width: 350px;
+}
+
+#statistics-container{
+    background-color: white;
+
+    margin-top: 100px;
+    margin-left: 50px;
+
+    height: 550px;
+    width: 220px;
+}
+
+#replays-container{
+    background-color: white;
+
+    margin-top: 100px;
+    margin-left: 50px;
+
+    height: 475px;
+    width: 475px;
+}
