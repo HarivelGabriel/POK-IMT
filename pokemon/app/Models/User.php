@@ -58,4 +58,17 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    protected $table = 'users';
+    protected $primaryKey = 'id';
+
+    public function energies()
+    {
+        return $this->belongsToMany(Energy::class, 'user_energy', 'FK_user', 'FK_energy', 'id', 'energy_id');
+    }
+    
+    public static function getUserEnergies($user_id){
+        return User::with('energies')->where('id', "=", $user_id)->get();
+    }
+
 }
