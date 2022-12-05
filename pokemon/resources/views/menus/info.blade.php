@@ -38,7 +38,12 @@
             <img src="{{ URL::asset('/images/avatar/1.png') }}">
         </div>
         <div id='statistics-container'>
+            <p>Played : 0</p> <br>
+            <p>Victories : 0</p> <br>
+            <p>Ratio : 0.00%</p> <br>
 
+            <p id="favorite-pokemon">Favorite Pokemon</p>
+            <img id="favorite-pokemon-img" src="{{$stats["favorite_pokemon"]}}">
         </div>
         <div id='replays-container'>
 

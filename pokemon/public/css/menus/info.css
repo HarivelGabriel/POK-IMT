@@ -15,7 +15,7 @@
     padding-bottom: 10px;
 
     height: 470px;
-    min-width: 207px;
+    width: 222px;
 }
 
 #avatar-container{
@@ -38,8 +38,14 @@
     margin-top: 100px;
     margin-left: 50px;
 
+    padding-left: 10px;
+
     height: 550px;
     width: 220px;
+}
+
+#favorite-pokemon-img{
+    width: 190px;
 }
 
 #replays-container{
