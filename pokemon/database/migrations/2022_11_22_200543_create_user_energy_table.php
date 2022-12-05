@@ -14,13 +14,11 @@ return new class extends Migration
     public function up()
     {
         Schema::create('user_energy', function (Blueprint $table) {
-            $table->id();
             $table->bigInteger('FK_energy')->unsigned()->index();
             $table->foreign('FK_energy')->references('energy_id')->on('energy');
             $table->bigInteger('FK_user')->unsigned()->index();
             $table->foreign('FK_user')->references('id')->on('users');
-            //$table->foreignId('energy_id')->constrained('energy');
-            //$table->foreignId('user_id')->constrained('user');
+            $table->primary(['FK_energy', 'FK_user']);
         });
     }
 
